@@ -1,0 +1,79 @@
+{
+    "graphs": [
+        {
+            "directed": true,
+            "type": "graph type",
+            "label": "graph A",
+            "metadata": {
+            },
+            "nodes": [
+                {
+                    "id": "0",
+                    "type": "default",
+                    "label": "(A) node 0",
+                    "metadata": {
+                        "root": "true",
+                        "chart": "http://chart.apis.google.com/chart?chs=21x21&chco=7E00FF,82FF00,FF003B&cht=v&chd=t:59.8,34.0,6.2,34.0,6.2,6.2,0.0&chf=bg,s,e0dede00"
+                    }
+                },
+                {
+                    "id": "1",
+                    "type": "default",
+                    "label": "(A) node 1",
+                    "metadata": {
+                        "chart": "http://chart.apis.google.com/chart?chs=21x21&chco=7E00FF,82FF00,FF003B&cht=v&chd=t:59.8,34.0,6.2,34.0,6.2,6.2,0.0&chf=bg,s,e0dede00"
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "source": "0",
+                    "relation": "edge relationship",
+                    "target": "1",
+                    "directed": true,
+                    "label": "interaction",
+                    "metadata": {
+                    }
+                }
+            ]
+        },
+        {
+            "directed": true,
+            "type": "graph type",
+            "label": "graph B",
+            "metadata": {
+                "user-defined": "values"
+            },
+            "nodes": [
+                {
+                    "id": "0",
+                    "type": "node type",
+                    "label": "(B) node 0",
+                    "metadata": {
+                        "user-defined": "values"
+                    }
+                },
+                {
+                    "id": "1",
+                    "type": "node type",
+                    "label": "(B) node 1",
+                    "metadata": {
+                        "user-defined": "values"
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "source": "1",
+                    "relation": "edge relationship",
+                    "target": "0",
+                    "directed": true,
+                    "label": "edge label",
+                    "metadata": {
+                        "user-defined": "values"
+                    }
+                }
+            ]
+        }
+    ]
+}

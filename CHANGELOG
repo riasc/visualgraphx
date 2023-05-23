@@ -1,0 +1,14 @@
+# Change Log
+All notable changes to VisualGraphX will be documented in this file. 
+
+## 0.0.2 - 2016-06-01
+### Changed
+- Input Format has been changed to JSON Graph Format (JGF)
+### Added
+- Automated detection of external URL
+
+## 0.0.1 - 2016-02-03
+### Added
+- Load external graphics asynchronically  
+- Fixation of the root node in order to center the layout
+- Calming of the layout through presetting the coordinates in space

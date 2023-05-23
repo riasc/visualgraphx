@@ -1,0 +1,250 @@
+
+
+ // jump to the next level
+                //level = level +1;
+
+                //var childs = JSON.search
+/*
+                    node = node.data(force.nodes(), function(d) { return d.id; });
+                    link = link.data(force.links(), function(d) {return d.source.id + "-" + d.target.id;});
+
+                    node.exit().remove();
+                    link.exit().remove();
+
+                     // container <g>-tag for elements
+                    node
+                        .enter()
+                        .append('g')
+                        .attr('class', 'gnode');
+
+                    node
+                        .append('circle')
+                        .attr('class', 'node')
+                        .attr('r', 12)
+                        .call(force.drag);
+
+                    node
+                        .append('text')
+                        .text(function(d) { return d[setup.label_node]; });
+
+                    node
+                        .on("dblclick", dblclick)
+                        .on("contextmenu", dragend);
+
+
+                    link
+                        .enter()
+                        .insert('line', '.link')
+                        .attr('class', 'link');
+
+
+                    force.on('tick', function() {
+                        node.attr('transform', function(d) {
+                            var x = Math.max(radius, Math.min($('svg').attr('width')  - radius, d.x));
+                            var y = Math.max(radius, Math.min($('svg').attr('height') - radius, d.y));
+                            return "translate(" + x + "," + y + ")";
+                        });
+
+                        link.attr("x1", function(d) { return d.source.x; })
+                            .attr("y1", function(d) { return d.source.y; })
+                            .attr("x2", function(d) { return d.target.x; })
+                            .attr("y2", function(d) { return d.target.y; });
+                        });*/
+
+ /*link
+                            .attr("x1", function(d) {
+                                return d.source.x + imagesize(d.source.chart)[0]/2;
+                            })
+                            .attr("y1", function(d) {
+                                return d.source.y + imagesize(d.source.chart)[1]/2;
+                            })
+                            .attr("x2", function(d) {
+                                return d.target.x + imagesize(d.target.chart)[0]/2;
+                            })
+                            .attr("y2", function(d) {
+                                return d.target.y + imagesize(d.target.chart)[1]/2;
+                            });
+                        })*/
+
+
+  /*
+
+
+                    /*
+                    force.on('tick', function() {
+                        node
+                            .attr("transform", function(d) {
+                                var x = Math.max(radius, Math.min($('svg').attr('width')  - radius, d.x));
+                                var y = Math.max(radius, Math.min($('svg').attr('height') - radius, d.y));
+                                return "translate(" + x + "," + y + ")";
+                            });
+
+                        path
+                            .attr("d", function(d) {
+                                var dx = d.target.x - d.source.x;
+                                var dy = d.target.y - d.source.y;
+                                var dr = Math.sqrt(dx * dx + dy * dy);
+                                return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
+                            });
+                    } // force on*/
+
+    //node = node.data(force.nodes(), function(d) { return d.id; });
+                    //node.exit().remove();
+
+                    //link = link.data(force.links(), function(d) {return d.source.id + "-" + d.target.id;});
+                    //link.exit().remove();
+
+
+                    /*
+                */
+
+
+                 /*
+                // add reference to index of nodes
+                var edges = [];
+                subgraph.links.forEach(function(e){
+                    var sourcenode = subgraph.nodes.filter(function(n) { return n.id === e.source; })[0];
+                    var targetnode = subgraph.nodes.filter(function(n) { return n.id === e.target; })[0];
+                    edges.push({source: sourcenode, target: targetnode});
+                });
+
+
+                // restart the force layout
+                force
+                    .nodes(subgraph.nodes)
+                    .links(edges)
+                    .start();
+
+                if(setup.source == 0) {
+
+                } else {
+
+
+
+            }*/
+
+            /*
+
+            // remove all the child nodes
+            function contract(node) {
+                console.log(node);
+                var outbound = JSON.search(subgraph, '//links[source="' + node.id + '"]');
+                for(key in outbound) {
+                    // remove link from subgraph
+                    subgraph.links = subgraph.links.filter(function(element) {
+                        return (element.source !== node.id) && (element.target !== outbound[key].target);
+                    });
+                    destroy(outbound[key].target); // call destroy to remove
+                }
+            }
+
+            function destroy(node) {
+                console.log('destroy');
+                // remove the node
+                var outbound = JSON.search(subgraph, '//links[source="' + node + '"]');
+                subgraph.nodes = subgraph.nodes.filter(function(element) {
+                        return element.id !== node;
+                });
+
+                for(key in outbound) {
+                    subgraph.links = subgraph.links.filter(function(element) {
+                        return (element.source !== node) && (element.target !== outbound[key].target);
+                    });
+                    destroy(outbound[key].target);
+                }
+            }
+
+            // determine the size (width, height) of an image link
+            function imagesize(link) {
+                var img = new Image();
+                img.src = link;
+                return [img.width, img.width];
+            }
+
+            // disable contextmenu
+            document.oncontextmenu = function() {
+                return false;
+            }
+            
+
+            //
+function traversal(rootnode, graph, nodes, links, depth, path) {
+    var node = JSON.search(graph, '//nodes[id="' + rootnode + '"]')[0];
+    var childs = JSON.search(graph, '//links[source="' + rootnode + '"]');
+    console.log(rootnode);
+    console.log(path);
+    path.push(rootnode); // add node to the path of visited nodes
+
+    //console.log(nodes);
+
+    if(depth == 0 ) {
+        nodes.push(node); // push the current node
+        for(key in childs) {
+            // check if target of link is part of subgraph and add it
+            if(path.indexOf(childs[key].target) != -1) { //
+                links.push({ source: rootnode, target: childs[key].target });
+            }
+        }
+
+    } else {
+        for(key in childs) {
+            console.log(path);
+            console.log(childs[key].target);
+            if(path.indexOf(childs[key].target) == -1 ) {
+                nodes.push(node);
+                //links.push({ source: rootnode, target: childs[key].target });
+                traversal(childs[key].target, graph, nodes, links, depth -1, path);
+            }
+
+        }
+    }
+
+
+    // expand childs of input node
+            function expand(root) {
+                var outbound = JSON.search(graph, '//links[source="' + root.id +'"]');
+                if(outbound.length == 0) {
+                    console.debug('wrapper.js:: expand(node) - node has no childs');
+                } else {
+                    for(key in outbound) {
+                        subgraph.links.push(outbound[key]);
+                        var node = JSON.search(graph, '//nodes[id="' + outbound[key].target + '"]')[0];
+                        subgraph.nodes.push(node);
+                    }
+                }
+            }
+}
+
+// expands the
+            function levelup(node) {
+                var childs = JSON.search(graph, '//links[source="' + node+ '"]');
+                if(childs.length > 0) {
+                    for(key in childs) {
+                        var node = JSON.search(graph, '//nodes[id="' + childs[key].target + '"]')[0];
+                        nodes.push(node); // add node of child to nodes
+                        //
+                        links.push({source: childs[key].source, target: childs[key].target});
+                    }
+                }
+            }
+
+
+            //
+            function dblclick(node) {
+                console.log(node);
+            
+                // expand
+                if(node.expanded == false) {
+                    console.debug('wrapper.js:: dblclick(node) - expand');
+                    node.expanded = true;
+                    expand(node);
+                    console.log(subgraph);
+                } else { // contract
+                    console.debug('wrapper.js:: dblclick(node) - contract');
+                    node.expanded = false;
+                    contract(node);
+                    console.log(subgraph);
+                }
+                update(); // update layout
+            }
+*/

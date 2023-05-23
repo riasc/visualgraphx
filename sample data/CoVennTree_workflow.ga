@@ -1,0 +1,119 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "Workflow CoVennTree with VisualGraphX", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 10
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "3d2e80ac-1d92-4507-a946-877dc1129300", 
+            "workflow_outputs": []
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/steffen/covenntree/coVennTree/1.6.0", 
+            "id": 1, 
+            "input_connections": {
+                "infile": {
+                    "id": 0, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "CoVennTree (Comparative weighted Venn Tree) - Rooted Tree", 
+            "outputs": [
+                {
+                    "name": "outfile_network", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "outfile_attribute", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/steffen/covenntree/coVennTree/1.6.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "745aede829e9", 
+                "name": "covenntree", 
+                "owner": "steffen", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"color_mode\": \"\\\"1\\\"\", \"trans_func\": \"\\\"3\\\"\", \"leafs_allInformation\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/Users/riasc/Documents/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"infile\": \"null\"}", 
+            "tool_version": "1.6.0", 
+            "type": "tool", 
+            "uuid": "b132fdb0-8e33-486b-92e0-cace4b28fa19", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computationaltranscriptomics/vgx_converter/vgx_converter/0.0.3", 
+            "id": 2, 
+            "input_connections": {
+                "input1": {
+                    "id": 1, 
+                    "output_name": "outfile_network"
+                }, 
+                "input2": {
+                    "id": 1, 
+                    "output_name": "outfile_attribute"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "SIF-to-VGX", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "json"
+                }
+            ], 
+            "position": {
+                "left": 450, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computationaltranscriptomics/vgx_converter/vgx_converter/0.0.3", 
+            "tool_shed_repository": {
+                "changeset_revision": "0726953d86f3", 
+                "name": "vgx_converter", 
+                "owner": "computationaltranscriptomics", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input2\": \"null\", \"__page__\": 0, \"input1\": \"null\", \"__rerun_remap_job_id__\": null, \"delimiter\": \"\\\"space\\\"\", \"chromInfo\": \"\\\"/Users/riasc/Documents/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": "0.0.3", 
+            "type": "tool", 
+            "uuid": "d295ffc6-6d4f-4d49-b186-5d5451264210", 
+            "workflow_outputs": []
+        }
+    }, 
+    "uuid": "e7b5e719-091c-4c44-bb9e-53a56975c89b"
+}

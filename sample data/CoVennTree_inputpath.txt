@@ -1,0 +1,277 @@
+#Datasets	deep1_merged_silva	deep2_merged_silva	deep3_merged_silva
+"root;"	0	0	0
+"root;cellular organisms;"	236	1692	379
+"root;cellular organisms;Bacteria;"	6082	4787	3131
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;"	219	319	59
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Acidimicrobidae;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Acidimicrobidae;Acidimicrobiales;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Acidimicrobidae;Acidimicrobiales;Acidimicrobineae;"	8	319	47
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Actinobacteridae;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Actinobacteridae;Actinomycetales;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Actinobacteridae;Actinomycetales;Corynebacterineae;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Actinobacteridae;Actinomycetales;Corynebacterineae;Corynebacteriaceae;"	0	2	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Actinobacteridae;Actinomycetales;Micrococcineae;"	0	1	1
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Actinobacteridae;Actinomycetales;Propionibacterineae;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Actinobacteridae;Actinomycetales;Propionibacterineae;Propionibacteriaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Actinobacteridae;Actinomycetales;Propionibacterineae;Propionibacteriaceae;Propionibacterium;"	0	9	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;Nitriliruptoridae;"	0	2	1
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;unclassified Actinobacteria;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;unclassified Actinobacteria;marine Actinobacteria clade;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;unclassified Actinobacteria;marine Actinobacteria clade;environmental samples <BDA1-5 cluster>;"	0	0	0
+"root;cellular organisms;Bacteria;Actinobacteria <phylum>;Actinobacteria;unclassified Actinobacteria;marine Actinobacteria clade;environmental samples <BDA1-5 cluster>;uncultured actinobacterium OCS155;"	0	2	0
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;"	1	2	7
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;"	41	78	115
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Cytophagia;"	0	0	0
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Cytophagia;Cytophagales;"	0	0	0
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Cytophagia;Cytophagales;Cytophagaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Cytophagia;Cytophagales;Cytophagaceae;Marinoscillum;"	9	19	19
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Flavobacteriia;"	0	0	0
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Flavobacteriia;Flavobacteriales;"	28	44	35
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Flavobacteriia;Flavobacteriales;Cryomorphaceae;"	2	2	0
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Flavobacteriia;Flavobacteriales;Cryomorphaceae;Owenweeksia;"	7	22	3
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;"	44	15	4
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Sufflavibacter;"	15	2	0
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Sphingobacteriia;"	0	0	3
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Sphingobacteriia;Sphingobacteriales;"	0	1	0
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Sphingobacteriia;Sphingobacteriales;Chitinophagaceae;"	2	0	0
+"root;cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Sphingobacteriia;Sphingobacteriales;Chitinophagaceae;Sediminibacterium;"	0	0	15
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;"	0	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Lentisphaerae;"	0	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Lentisphaerae;Lentisphaeria;"	0	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Lentisphaerae;Lentisphaeria;Lentisphaerales;"	0	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Lentisphaerae;Lentisphaeria;Lentisphaerales;Lentisphaeraceae;"	0	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Lentisphaerae;Lentisphaeria;Lentisphaerales;Lentisphaeraceae;Lentisphaera;"	0	1	1
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Lentisphaerae;Lentisphaeria;Victivallales;"	0	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Lentisphaerae;Lentisphaeria;Victivallales;Victivallaceae;"	0	1	8
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Verrucomicrobia;"	21	129	478
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Verrucomicrobia;Opitutae;"	9	17	8
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Verrucomicrobia;Opitutae;Puniceicoccales;"	0	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Verrucomicrobia;Opitutae;Puniceicoccales;Puniceicoccaceae;"	1	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Verrucomicrobia;Opitutae;Puniceicoccales;Puniceicoccaceae;Cerasicoccus;"	0	0	2
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Verrucomicrobia;Verrucomicrobiae;"	0	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Verrucomicrobia;Verrucomicrobiae;Verrucomicrobiales;"	3	11	10
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Verrucomicrobia;Verrucomicrobiae;Verrucomicrobiales;Verrucomicrobiaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Chlamydiae/Verrucomicrobia group;Verrucomicrobia;Verrucomicrobiae;Verrucomicrobiales;Verrucomicrobiaceae;Roseibacillus;"	0	5	0
+"root;cellular organisms;Bacteria;Chloroflexi <phylum>;"	2	196	53
+"root;cellular organisms;Bacteria;Chloroflexi <phylum>;Anaerolineae;"	0	0	0
+"root;cellular organisms;Bacteria;Chloroflexi <phylum>;Anaerolineae;Anaerolineales;"	0	0	0
+"root;cellular organisms;Bacteria;Chloroflexi <phylum>;Anaerolineae;Anaerolineales;Anaerolineaceae;"	0	1	5
+"root;cellular organisms;Bacteria;Chloroflexi <phylum>;Chloroflexi;"	36	350	800
+"root;cellular organisms;Bacteria;Cyanobacteria;"	4479	10801	1426
+"root;cellular organisms;Bacteria;Cyanobacteria;Nostocales;"	0	0	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Nostocales;Nostocaceae;"	0	2	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;"	2	0	1
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Chroococcales;"	1	9	4
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Chroococcales;Cyanobium;"	1	0	1
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Chroococcales;Synechococcus;"	38	47	12
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Chroococcales;Synechococcus;Synechococcus sp. CC9311;"	0	10	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Chroococcales;Synechococcus;Synechococcus sp. CCMP839;"	0	9	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Chroococcales;Synechococcus;Synechococcus sp. RCC307;"	0	2	2
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Chroococcales;Synechocystis;"	0	0	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Chroococcales;Synechocystis;Synechocystis sp. PCC 6803;"	33	3	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Oscillatoriales;"	0	5	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Oscillatoriales;Leptolyngbya;"	0	0	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Oscillatoriales;Leptolyngbya;Leptolyngbya sp. PCC 7376;"	0	2	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Oscillatoriophycideae;Oscillatoriales;Phormidium;"	0	6	1
+"root;cellular organisms;Bacteria;Cyanobacteria;Pleurocapsales;"	1	1	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Prochlorales;"	0	0	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Prochlorales;Prochlorococcaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Cyanobacteria;Prochlorales;Prochlorococcaceae;Prochlorococcus;"	13537	14428	1568
+"root;cellular organisms;Bacteria;Deferribacteres <phylum>;"	5	9	14
+"root;cellular organisms;Bacteria;Deferribacteres <phylum>;Deferribacteres;"	0	0	0
+"root;cellular organisms;Bacteria;Deferribacteres <phylum>;Deferribacteres;Deferribacterales;"	156	319	193
+"root;cellular organisms;Bacteria;Deinococcus-Thermus;"	0	0	0
+"root;cellular organisms;Bacteria;Deinococcus-Thermus;Deinococci;"	0	0	0
+"root;cellular organisms;Bacteria;Deinococcus-Thermus;Deinococci;Thermales;"	0	0	0
+"root;cellular organisms;Bacteria;Deinococcus-Thermus;Deinococci;Thermales;Thermaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Deinococcus-Thermus;Deinococci;Thermales;Thermaceae;Meiothermus;"	0	3	0
+"root;cellular organisms;Bacteria;environmental samples <Bacteria>;"	1	1	0
+"root;cellular organisms;Bacteria;environmental samples <Bacteria>;uncultured bacterium;"	5	30	19
+"root;cellular organisms;Bacteria;Fibrobacteres/Acidobacteria group;"	0	0	0
+"root;cellular organisms;Bacteria;Fibrobacteres/Acidobacteria group;Acidobacteria;"	0	15	3
+"root;cellular organisms;Bacteria;Fibrobacteres/Acidobacteria group;Acidobacteria;Acidobacteriia;"	0	0	0
+"root;cellular organisms;Bacteria;Fibrobacteres/Acidobacteria group;Acidobacteria;Acidobacteriia;Acidobacteriales;"	0	0	0
+"root;cellular organisms;Bacteria;Fibrobacteres/Acidobacteria group;Acidobacteria;Acidobacteriia;Acidobacteriales;Acidobacteriaceae;"	0	1	7
+"root;cellular organisms;Bacteria;Firmicutes;"	1	0	2
+"root;cellular organisms;Bacteria;Firmicutes;Bacilli;"	0	0	0
+"root;cellular organisms;Bacteria;Firmicutes;Bacilli;Bacillales;"	0	0	0
+"root;cellular organisms;Bacteria;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;"	0	4	0
+"root;cellular organisms;Bacteria;Firmicutes;Clostridia;"	0	0	0
+"root;cellular organisms;Bacteria;Firmicutes;Clostridia;Clostridiales;"	0	4	0
+"root;cellular organisms;Bacteria;Gemmatimonadetes;"	0	3	11
+"root;cellular organisms;Bacteria;Nitrospinae;"	0	0	0
+"root;cellular organisms;Bacteria;Nitrospinae;Nitrospinia;"	0	0	0
+"root;cellular organisms;Bacteria;Nitrospinae;Nitrospinia;Nitrospinales;"	0	0	0
+"root;cellular organisms;Bacteria;Nitrospinae;Nitrospinia;Nitrospinales;Nitrospinaceae;"	0	2	3
+"root;cellular organisms;Bacteria;Nitrospinae;Nitrospinia;Nitrospinales;Nitrospinaceae;Nitrospina;"	0	1	7
+"root;cellular organisms;Bacteria;Planctomycetes;"	5	85	192
+"root;cellular organisms;Bacteria;Planctomycetes;Phycisphaerae;"	0	0	2
+"root;cellular organisms;Bacteria;Planctomycetes;Phycisphaerae;Phycisphaerales;"	0	0	0
+"root;cellular organisms;Bacteria;Planctomycetes;Phycisphaerae;Phycisphaerales;Phycisphaeraceae;"	0	91	14
+"root;cellular organisms;Bacteria;Planctomycetes;Phycisphaerae;Phycisphaerales;Phycisphaeraceae;Phycisphaera;"	0	0	4
+"root;cellular organisms;Bacteria;Planctomycetes;Planctomycetia;"	0	0	0
+"root;cellular organisms;Bacteria;Planctomycetes;Planctomycetia;Planctomycetales;"	0	0	0
+"root;cellular organisms;Bacteria;Planctomycetes;Planctomycetia;Planctomycetales;Planctomycetaceae;"	4	10	8
+"root;cellular organisms;Bacteria;Planctomycetes;Planctomycetia;Planctomycetales;Planctomycetaceae;Blastopirellula;"	0	4	9
+"root;cellular organisms;Bacteria;Planctomycetes;Planctomycetia;Planctomycetales;Planctomycetaceae;Pirellula;"	7	0	0
+"root;cellular organisms;Bacteria;Planctomycetes;Planctomycetia;Planctomycetales;Planctomycetaceae;Planctomyces;"	1	4	80
+"root;cellular organisms;Bacteria;Planctomycetes;Planctomycetia;Planctomycetales;Planctomycetaceae;Rhodopirellula;"	6	23	14
+"root;cellular organisms;Bacteria;Proteobacteria;"	1824	1442	1304
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;"	1393	2385	1028
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Caulobacterales;"	2	1	4
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Caulobacterales;Caulobacteraceae;"	0	2	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Caulobacterales;Caulobacteraceae;Caulobacter;"	0	1	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Caulobacterales;Caulobacteraceae;Phenylobacterium;"	0	2	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Caulobacterales;Caulobacteraceae;Phenylobacterium;Phenylobacterium sp. 2PR54-19;"	0	4	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;environmental samples <alpha subdivision>;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;environmental samples <alpha subdivision>;uncultured alpha proteobacterium;"	0	2	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;"	2	65	8
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Bradyrhizobiaceae;"	0	17	5
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Bradyrhizobiaceae;Bradyrhizobium;"	0	4	4
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Bradyrhizobiaceae;Rhodopseudomonas;"	0	0	2
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Hyphomicrobiaceae;"	0	6	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Methylobacteriaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Methylobacteriaceae;Methylobacterium;"	3	17	17
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Methylobacteriaceae;Methylobacterium;Methylobacterium extorquens group;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Methylobacteriaceae;Methylobacterium;Methylobacterium extorquens group;Methylobacterium extorquens;"	0	6	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Methylocystaceae;"	1	0	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Rhodobiaceae;"	0	0	2
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;"	0	1	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;Hyphomonadaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;Hyphomonadaceae;Hyphomonas;"	1	1	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;Rhodobacteraceae;"	377	1109	29
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;Rhodobacteraceae;Donghicola;"	0	0	2
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;Rhodobacteraceae;Ruegeria;"	1	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;Rhodobacteraceae;Ruegeria;Ruegeria sp. TM1040;"	0	0	2
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodospirillales;"	2	16	6
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodospirillales;environmental samples <Rhodospirillales>;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodospirillales;environmental samples <Rhodospirillales>;uncultured Rhodospirillales bacterium;"	0	0	3
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodospirillales;Rhodospirillaceae;"	209	1192	541
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodospirillales;Rhodospirillaceae;Defluviicoccus;"	2	12	8
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;"	517	7403	9521
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Anaplasmataceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Anaplasmataceae;Wolbachieae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Anaplasmataceae;Wolbachieae;Wolbachia;"	0	2	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Anaplasmataceae;Wolbachieae;Wolbachia;Wolbachia endosymbiont of Dirofilaria repens;"	0	2	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Candidatus Midichloriaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Candidatus Midichloriaceae;Candidatus Midichloria;"	17	37	5
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;environmental samples <Rickettsiales>;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;environmental samples <Rickettsiales>;uncultured Rickettsiales bacterium;"	0	13	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Holosporaceae;"	0	48	10
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Rickettsiaceae;"	1	81	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Rickettsiaceae;Rickettsieae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Rickettsiales;Rickettsiaceae;Rickettsieae;Rickettsia;"	0	32	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;"	12	13	4
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;"	1	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Erythrobacter;"	0	11	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Erythrobacter;Erythrobacter flavus;"	0	5	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;"	7	17	6
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Blastomonas;"	9	2	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Novosphingobium;"	0	0	3
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingomonas;"	3	17	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingomonas;Sphingomonas xinjiangensis;"	0	102	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingopyxis;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingopyxis;Sphingopyxis sp. LH21;"	0	4	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;unclassified Alphaproteobacteria;"	9	210	24
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;unclassified Alphaproteobacteria;SAR11 cluster;"	16190	20006	14068
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;unclassified Alphaproteobacteria;SAR11 cluster;alpha proteobacterium HIMB114;"	3	14	1
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;unclassified Alphaproteobacteria;SAR11 cluster;Candidatus Pelagibacter;"	725	529	439
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;unclassified Alphaproteobacteria;unclassified Alphaproteobacteria (miscellaneous);"	0	3	0
+"root;cellular organisms;Bacteria;Proteobacteria;Alphaproteobacteria;unclassified Alphaproteobacteria;unclassified Alphaproteobacteria (miscellaneous);alpha proteobacterium OCS116;"	41	604	75
+"root;cellular organisms;Bacteria;Proteobacteria;Betaproteobacteria;"	9	5	1
+"root;cellular organisms;Bacteria;Proteobacteria;Betaproteobacteria;Burkholderiales;"	0	1	0
+"root;cellular organisms;Bacteria;Proteobacteria;Betaproteobacteria;Burkholderiales;Alcaligenaceae;"	0	0	1
+"root;cellular organisms;Bacteria;Proteobacteria;Betaproteobacteria;Burkholderiales;Alcaligenaceae;Bordetella;"	0	0	3
+"root;cellular organisms;Bacteria;Proteobacteria;Betaproteobacteria;Methylophilales;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Betaproteobacteria;Methylophilales;Methylophilaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Betaproteobacteria;Methylophilales;Methylophilaceae;Methylophilus;"	0	0	2
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;"	27	280	244
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;Bdellovibrionales;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;Bdellovibrionales;Bacteriovoracaceae;"	1	10	3
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;Bdellovibrionales;Bdellovibrionaceae;"	1	67	9
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;Desulfuromonadales;"	4	59	0
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;Desulfuromonadales;Geobacteraceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;Desulfuromonadales;Geobacteraceae;Geopsychrobacter;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;Desulfuromonadales;Geobacteraceae;Geopsychrobacter;Geopsychrobacter electrodiphilus;"	0	2	0
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;environmental samples <delta subdivision>;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;environmental samples <delta subdivision>;uncultured delta proteobacterium;"	1	59	2
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;Myxococcales;"	2	12	2
+"root;cellular organisms;Bacteria;Proteobacteria;delta/epsilon subdivisions;Deltaproteobacteria;Myxococcales;Cystobacterineae;"	2	9	3
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;"	98	346	149
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;"	0	0	1
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;"	1	97	12
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas;"	43	295	343
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas;Alteromonas macleodii;"	1	4	2
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas;Alteromonas macleodii;Alteromonas macleodii AltDE1;"	0	2	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas;Alteromonas macleodii;Alteromonas macleodii ATCC 27126;"	0	33	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas;Alteromonas sp. ANSW2-2;"	0	2	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas;Alteromonas sp. CF14-3;"	0	8	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas;Alteromonas tagae;"	0	0	3
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Haliea;"	0	2	1
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Ferrimonadaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Ferrimonadaceae;Ferrimonas;"	0	2	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Pseudoalteromonadaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Alteromonadales;Pseudoalteromonadaceae;Pseudoalteromonas;"	17	27	8
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Legionellales;"	0	4	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Legionellales;Coxiellaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Legionellales;Coxiellaceae;Coxiella;"	1	6	4
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Oceanospirillales;"	259	207	216
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Oceanospirillales;Oceanospirillaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Oceanospirillales;Oceanospirillaceae;Marinomonas;"	2	3	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Pseudomonadales;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Pseudomonadales;Moraxellaceae;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Pseudomonadales;Moraxellaceae;Acinetobacter;"	0	0	2
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Pseudomonadales;Moraxellaceae;Psychrobacter;"	0	10	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Salinisphaerales;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Salinisphaerales;Salinisphaeraceae;"	8	112	128
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Thiotrichales;"	0	3	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Thiotrichales;Piscirickettsiaceae;"	0	23	1
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Thiotrichales;unclassified Thiotrichales;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Thiotrichales;unclassified Thiotrichales;Fangia;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Thiotrichales;unclassified Thiotrichales;Fangia;Fangia hongkongensis;"	0	11	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;unclassified Gammaproteobacteria;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;unclassified Gammaproteobacteria;OMG group;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;unclassified Gammaproteobacteria;OMG group;OM182 clade;"	2	5	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;unclassified Gammaproteobacteria;OMG group;SAR92 clade;"	2	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;unclassified Gammaproteobacteria;OMG group;SAR92 clade;environmental samples <SAR92 clade>;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;unclassified Gammaproteobacteria;OMG group;SAR92 clade;environmental samples <SAR92 clade>;uncultured SAR92 cluster bacterium;"	3	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Vibrionales;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Vibrionales;Vibrionaceae;"	2	19	11
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Vibrionales;Vibrionaceae;Photobacterium;"	0	0	1
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Vibrionales;Vibrionaceae;Photobacterium;Photobacterium sp. HAR72;"	0	3	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio;"	12	40	6
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio;Vibrio harveyi group;"	0	2	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Xanthomonadales;"	0	0	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Xanthomonadales;Sinobacteraceae;"	0	4	4
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Xanthomonadales;Xanthomonadaceae;"	0	8	0
+"root;cellular organisms;Bacteria;Proteobacteria;Gammaproteobacteria;Xanthomonadales;Xanthomonadaceae;Xylella;"	0	3	0
+"root;cellular organisms;Bacteria;Spirochaetes;"	5	0	0
+"root;cellular organisms;Bacteria;unclassified Bacteria;"	0	0	0
+"root;cellular organisms;Bacteria;unclassified Bacteria;Candidatus Saccharibacteria;"	0	2	0
+"root;cellular organisms;Eukaryota;"	0	0	0
+"root;cellular organisms;Eukaryota;Stramenopiles;"	0	0	0
+"root;cellular organisms;Eukaryota;Stramenopiles;Oomycetes;"	0	0	0
+"root;cellular organisms;Eukaryota;Stramenopiles;Oomycetes;Peronosporales;"	0	0	0
+"root;cellular organisms;Eukaryota;Stramenopiles;Oomycetes;Peronosporales;Phytophthora;"	0	0	0
+"root;cellular organisms;Eukaryota;Stramenopiles;Oomycetes;Peronosporales;Phytophthora;Phytophthora ramorum;"	0	0	3
+"root;cellular organisms;Eukaryota;Viridiplantae;"	0	1	3
+"root;cellular organisms;Eukaryota;Viridiplantae;Chlorophyta;"	0	0	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Chlorophyta;Nephroselmidophyceae;"	0	0	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Chlorophyta;Nephroselmidophyceae;Nephroselmis;"	0	0	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Chlorophyta;Nephroselmidophyceae;Nephroselmis;Nephroselmis olivacea;"	2	23	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Streptophyta;"	0	1	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Mesostigmatophyceae;"	0	0	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Mesostigmatophyceae;Mesostigmatales;"	0	0	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Mesostigmatophyceae;Mesostigmatales;Mesostigmataceae;"	0	0	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Mesostigmatophyceae;Mesostigmatales;Mesostigmataceae;Mesostigma;"	0	0	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Mesostigmatophyceae;Mesostigmatales;Mesostigmataceae;Mesostigma;Mesostigma viride;"	0	2	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;"	0	0	0
+"root;cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;Embryophyta;"	1	1	0
+"root;unclassified sequences;"	0	0	0
+"root;unclassified sequences;environmental samples <unclassified>;"	0	0	0
+"root;unclassified sequences;environmental samples <unclassified>;uncultured marine microorganism;"	0	0	5
+"root;unclassified sequences;environmental samples <unclassified>;uncultured organism;"	0	0	7
+"root;No hits;"	127	656	1269
