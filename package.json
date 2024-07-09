@@ -14,7 +14,7 @@
   "author": "Carl Eberhard",
   "license": "BSD",
   "devDependencies": {
-    "grunt": "~1.3.0",
+    "grunt": "~1.5.2",
     "grunt-cli": "~0.1.9",
     "grunt-contrib-handlebars": "~0.5.10",
     "grunt-contrib-concat": "~0.3.0",
