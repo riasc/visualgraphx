@@ -1,0 +1,21 @@
+{
+    "graph": {
+        "directed": true,
+        "label": "Sample Network",
+        "nodes": [
+            { "id": "A", "label": "Node A", "metadata": {} },
+            { "id": "B", "label": "Node B", "metadata": {} },
+            { "id": "C", "label": "Node C", "metadata": {} },
+            { "id": "D", "label": "Node D", "metadata": {} },
+            { "id": "E", "label": "Node E", "metadata": {} },
+            { "id": "F", "label": "Node F", "metadata": {} }
+        ],
+        "edges": [
+            { "source": "A", "target": "B" },
+            { "source": "A", "target": "C" },
+            { "source": "B", "target": "D" },
+            { "source": "B", "target": "E" },
+            { "source": "C", "target": "F" }
+        ]
+    }
+}

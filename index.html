@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>VisualGraphX - Interactive Graph Visualization</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="static/libs/select2-3.5.3/select2.css" />
+    <link rel="stylesheet" href="static/app.css" />
+
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; }
+        .portlet-header { padding: 10px 15px; background: #f5f5f5; border-bottom: 1px solid #ddd; font-size: 16px; font-weight: bold; }
+        .portlet-body { padding: 15px; }
+        .portlet { border: 1px solid #ddd; margin-bottom: 15px; }
+        .portlet-operations { float: right; }
+        .tabs-nav { list-style: none; padding: 0; margin: 0 0 10px 0; border-bottom: 2px solid #ddd; }
+        .tabs-nav .tab-item { display: inline-block; padding: 8px 16px; cursor: pointer; }
+        .tabs-nav .tab-item.active { border-bottom: 2px solid #337ab7; margin-bottom: -2px; font-weight: bold; }
+        .ui-table { width: 100%; }
+        .ui-table td { padding: 5px; vertical-align: top; }
+        .ui-label { font-weight: bold; font-size: 14px; display: block; margin: 10px 0; }
+        .elements-select-info { font-size: 0.85em; color: #777; margin: 2px 0 8px 0; }
+        .dropdown-menu { position: absolute; background: #fff; border: 1px solid #ccc; list-style: none; padding: 5px 0; z-index: 1000; }
+        .dropdown-menu li a { display: block; padding: 4px 16px; cursor: pointer; text-decoration: none; color: #333; }
+        .dropdown-menu li a:hover { background: #f5f5f5; }
+        #file-upload-area { text-align: center; padding: 40px; margin: 40px auto; max-width: 500px; border: 2px dashed #ccc; border-radius: 8px; }
+        #file-upload-area h2 { margin-top: 0; }
+        .node { fill: #1f77b4; stroke: #fff; stroke-width: 1.5px; }
+        .node.fixed { fill: #d62728; }
+        .linkline { fill: none; stroke: #999; stroke-opacity: .6; stroke-width: 1.5px; }
+        .linktext { font-size: 10px; fill: #666; }
+        #graph-visualization svg text { font-size: 11px; }
+    </style>
+
+    <!-- JS dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="static/plugins/jsonpath-0.8.0.js"></script>
+    <script src="static/libs/defiantjs-1.2.5/defiant-latest.min.js"></script>
+    <script src="static/libs/select2-3.5.3/select2.min.js"></script>
+    <script src="static/libs/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+</head>
+<body>
+
+<div id="file-upload-area">
+    <h2>VisualGraphX</h2>
+    <p>Select a JSON Graph Format (.jgf / .json) file to visualize.</p>
+    <input type="file" id="file-input" accept=".json,.jgf" />
+</div>
+
+<div id="app-container"></div>
+
+<script type="text/javascript">
+    var config = {
+        root: '',
+        app_root: 'static/'
+    };
+
+    // console protection
+    window.console = window.console || {
+        log: function() {},
+        debug: function() {},
+        info: function() {},
+        warn: function() {},
+        error: function() {},
+        assert: function() {}
+    };
+
+    // Catch any JS errors
+    window.onerror = function(msg, url, line) {
+        alert('JS Error: ' + msg + '\nat ' + url + ':' + line);
+    };
+
+    require.onError = function(err) {
+        alert('RequireJS Error: ' + err.requireType + '\nModule: ' + err.requireModules);
+    };
+
+    require.config({
+        baseUrl: 'static/',
+        paths: {
+            'plugin':               '.',
+            'utils/utils':          'shims/utils',
+            'mvc/ui/ui-portlet':    'shims/ui-portlet',
+            'mvc/ui/ui-tabs':       'shims/ui-tabs',
+            'mvc/ui/ui-misc':       'shims/ui-misc',
+            'mvc/ui/ui-table':      'shims/ui-table',
+            'mvc/ui/ui-slider':     'shims/ui-slider',
+            'libs/underscore':      'shims/noop-underscore',
+            'd3':                   'shims/noop-d3'
+        }
+    });
+
+    document.getElementById('file-input').addEventListener('change', function(e) {
+        var file = e.target.files[0];
+        if (!file) return;
+
+        var reader = new FileReader();
+        reader.onload = function(evt) {
+            try {
+                var jgfData = JSON.parse(evt.target.result);
+            } catch (err) {
+                alert('Error parsing JSON file: ' + err.message);
+                return;
+            }
+
+            alert('File parsed OK, loading app...');
+
+            // hide upload area
+            document.getElementById('file-upload-area').style.display = 'none';
+
+            require(['plugin/app'], function(App) {
+                alert('App module loaded! App is: ' + typeof App);
+                var options = {
+                    id: undefined,
+                    hid: undefined,
+                    did: undefined,
+                    durl: null,
+                    jgfData: jgfData,
+                    config: { dataset_id: 'local-file' }
+                };
+
+                try {
+                    var app = new App(options);
+                    alert('App created OK, appending to DOM');
+                    $('#app-container').append(app.$el);
+                } catch(e) {
+                    alert('Error creating App: ' + e.message + '\n' + e.stack);
+                }
+            }, function(err) {
+                console.error('RequireJS error:', err);
+                alert('Failed to load app: ' + err.message);
+            });
+        };
+        reader.readAsText(file);
+    });
+</script>
+</body>
+</html>

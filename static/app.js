@@ -1,6 +1,6 @@
 
-window.console.debug = function() {};
-window.console.log = function() {};
+//window.console.debug = function() {};
+//window.console.log = function() {};
 
 // dependencies
 define(['utils/utils',

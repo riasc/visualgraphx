@@ -132,7 +132,16 @@ define([], function() {
                     this.trigger('ready', this); // fire 'ready'-event - meaning that the data has been fetched
 
                 });
-                this.fetch();
+                // Standalone mode: use pre-loaded JGF data instead of Galaxy API
+                if (this.app.options.jgfData) {
+                    var _self = this;
+                    setTimeout(function() {
+                        _self.set(_self.app.options.jgfData);
+                        _self.trigger('sync');
+                    }, 0);
+                } else {
+                    this.fetch();
+                }
             },
 
             url: function() {
