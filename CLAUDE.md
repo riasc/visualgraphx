@@ -4,47 +4,56 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-VisualGraphX is a Galaxy platform visualization plugin for interactive, large-scale graph visualization. It renders JSON Graph Format (JGF) datasets from a user's Galaxy history using D3.js force-directed layouts. It supports single and multigraph JGF files, node expand/collapse, drag-to-pin, and SVG/PNG export.
+VisualGraphX is an interactive, large-scale graph visualization tool using D3.js force-directed layouts. It supports single and multigraph JGF files, node expand/collapse, drag-to-pin, and SVG/PNG export.
+
+It runs in two modes:
+- **Standalone** (`index.html`) — loads JGF files via browser file upload
+- **Galaxy plugin** (`templates/visualgraphx.mako`) — legacy mode, fetches data from Galaxy API
 
 ## Build & Development Commands
 
 ```bash
-npm install                  # Install dependencies
-grunt                        # Default task: copies plugin files into Galaxy instance
-grunt dev                    # Watch mode: auto-copies on file changes
-grunt compile                # RequireJS build (produces static/build-app.js)
-```
+# Standalone (primary mode)
+python3 -m http.server 8000    # Serve locally, open http://localhost:8000
 
-Before running `grunt`, set the `galaxy` path in `gruntfile.js` (line 7) to your local Galaxy instance path.
+# Galaxy plugin mode (legacy)
+npm install                     # Install grunt dependencies
+grunt                           # Copy plugin files into Galaxy instance
+grunt dev                       # Watch mode: auto-copies on file changes
+```
 
 ## Architecture
 
-This is a Backbone.js MVC application loaded via RequireJS inside a Galaxy visualization iframe.
+Backbone.js MVC application loaded via RequireJS. Dependencies (jQuery, Backbone, Underscore, D3 v3) are loaded from CDNs in standalone mode.
 
-**Entry point:** `templates/visualgraphx.mako` — Mako template that sets up RequireJS config and bootstraps `app.js`. Galaxy injects dataset/history IDs here.
+**Entry points:**
+- `index.html` — Standalone. Loads deps from CDNs, configures RequireJS, handles file upload, passes JGF data to app via `options.jgfData`.
+- `templates/visualgraphx.mako` — Galaxy mode. Mako template that relies on Galaxy's libs and API.
 
-**`app.js`** — Main Backbone.View. Initializes models (types, graph), then switches between Editor and Viewer views via `go()`.
+**`static/app.js`** — Main Backbone.View. Initializes models (types, graph), listens for graph `ready` event, then creates Editor and Viewer views. Switches between them via `go()`.
 
 **Models (`static/models/`):**
-- `graph.js` — Core model. Fetches JGF data from Galaxy API, parses nodes/edges into Backbone collections, determines graph properties (root node, depth, labels, edge orientation).
+- `graph.js` — Core model. In standalone mode, accepts JGF data directly (`options.jgfData`) via deferred `setTimeout` to allow event listeners to bind. In Galaxy mode, fetches via Backbone `fetch()`. Parses nodes/edges into collections, determines graph properties (root node, depth, labels).
 - `settings.js` — Visualization settings model.
 
 **Views (`static/views/`):**
-- `editor/` — Configuration panel (start screen, settings forms) shown before visualization.
-- `viewer/` — Visualization display (`viewer.js` manages the viewport, `visualizer.js` renders the graph).
-- `viewport.js` — SVG viewport management.
-- `ui/` — Reusable UI components (dropdowns, buttons, tables).
+- `editor/` — Configuration panel (graph type selection, settings) shown before visualization.
+- `viewer/` — Visualization display. `visualizer.js` dynamically loads the graph wrapper on the `wrap` event.
+- `ui/` — Custom UI components (Select2 dropdowns, radio buttons, tables, labels).
 
 **Graph types (`static/graph/`):**
-- `types.js` — Registry of available graph type configs. Currently only `d3js_generic` is active (`d3js_covenntree` is commented out).
-- `d3js/generic/` — D3.js force-directed graph implementation: `config.js` (type metadata), `wrapper.js` (D3 bindings), `src.js` (force layout logic), `settings.js` (type-specific settings).
-- `d3js/covenntree/` — CoVennTree-specific visualization variant (currently disabled).
-- `d3js/common/` — Shared config and wrapper utilities across graph types.
-- `forms/` — Dynamic form generation for graph settings.
+- `types.js` — Registry. Only `d3js_generic` is active.
+- `d3js/generic/wrapper.js` — Core D3 v3 force layout. Uses `d3.layout.force()`, `JSON.search()` (DefiantJS) for graph traversal, supports expand/collapse via double-click.
 
-**Plugin registration:** `config/visualgraphx.xml` — Declares the plugin to Galaxy's Visualization Registry. Accepts `HistoryDatasetAssociation` of type `text.Json`.
+**Shims (`static/shims/`):** Lightweight replacements for Galaxy UI modules. RequireJS path mapping in `index.html` redirects `utils/utils`, `mvc/ui/*` imports to these stubs. They implement only the API surface used by VisualGraphX (Portlet, Tabs, ButtonIcon, ButtonMenu, Label, Message).
 
-**Libraries (`static/libs/`):** DefiantJS (XPath queries on JSON), Select2, FileSaver, capture.js (SVG/PNG export).
+**Libraries (`static/libs/`):** DefiantJS 1.2.5 (XPath queries on JSON via `JSON.search()`), Select2 3.5.3, FileSaver, capture.js (SVG/PNG export).
+
+## Key Technical Notes
+
+- **D3 version:** v3 (uses `d3.layout.force()`, `d3.behavior.zoom()`). Not compatible with D3 v4+.
+- **DefiantJS** adds `JSON.search()` globally — must be loaded before any module using it.
+- **Timing:** `graph.js` uses `setTimeout(fn, 0)` for standalone data injection so that `app.js` can bind its `listenTo('ready', ...)` handler before the event fires.
 
 ## Input Format
 
@@ -52,4 +61,5 @@ JGF (JSON Graph Format) with `graph.nodes[]` (each with unique `id`) and `graph.
 
 ## Sample Data
 
-The `sample data/` directory contains JGF test files ranging from small (multigraph_min.jgf) to large-scale (100Knetwork.jgf with 100K nodes/edges).
+- `static/sample.json` — minimal 6-node test graph
+- `sample data/` — larger JGF files up to 100K nodes/edges
